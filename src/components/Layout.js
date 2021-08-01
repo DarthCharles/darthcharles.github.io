@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet';
 
 import { Appbar } from './Appbar';
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, title = 'Home' }) => {
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home | Carlos Contreras</title>
+        <title>{`${title} | Carlos Contreras`}</title>
       </Helmet>
       <Appbar />
       {children}

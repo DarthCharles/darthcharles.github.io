@@ -6,19 +6,19 @@ import { Layout } from '../components/Layout';
 import { Card } from '../components/Card';
 
 const Blog = ({ data }) => {
-  const projectList = data.allBlogYaml.edges;
+  const blogList = data.allBlogYaml.edges;
 
   return (
-    <Layout>
+    <Layout title={'Blog'}>
       <div className="row">
-        {projectList.map(({ node }) => {
-          const a = require(`../images/${node.image}`);
+        {blogList.map(({ node }) => {
+          const cardImage = require(`../images/${node.image}`);
           return (
             <Card
               cardTitle={node.title}
               cardSubtitle={node.subtitle}
               link={node.link}
-              cardImage={a}
+              cardImage={cardImage}
               key={node.id}
             />
           );

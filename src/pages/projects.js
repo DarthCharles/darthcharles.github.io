@@ -9,17 +9,16 @@ function Projects({ data }) {
   const projectList = data.allProjectsYaml.edges;
 
   return (
-    <Layout>
+    <Layout title={'Projects'}>
       <div className="row">
         {projectList.map(({ node }) => {
-
-          const a = require(`../images/${node.image}`);
+          const cardImage = require(`../images/${node.image}`);
           return (
             <Card
               cardTitle={node.title}
               cardSubtitle={node.subtitle}
               link={node.link}
-              cardImage={a}
+              cardImage={cardImage}
               key={node.id}
             />
           );

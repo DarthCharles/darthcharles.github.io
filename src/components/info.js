@@ -20,10 +20,13 @@ export const Info = () => {
         </span>
       </div>
       <div className="text-muted mx-5 my-4 h3 text-justify info">
+        <span role="img" aria-label="wink emoji">
+          👋
+        </span>{' '}
         I’m a Software engineer committed to deliver high quality and performant
-        solutions. Always eager learn something new and constantly looking
-        for new skills to add to my stack. I’m a self taught person with a
-        strong sense of ownership, communication and leadership skills.
+        solutions. I'm always eager learn something new and constantly looking for
+        new skills to add to my stack.
+        <p className="mt-3">I like chess, walking the dog and cooking.</p>
         <p className="mt-3">
           Send me a message, I've got candy.{' '}
           <span role="img" aria-label="wink emoji">
