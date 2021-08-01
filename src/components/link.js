@@ -1,7 +1,8 @@
 import React from 'react';
+
 import Link from 'gatsby-plugin-transition-link/AniLink';
 
-export default function Intent({ children, to }) {
+export const Intent = ({ children, to }) => {
   return (
     <Link
       cover
@@ -9,13 +10,13 @@ export default function Intent({ children, to }) {
       className="nav-link"
       to={to}
       activeStyle={{
-        color: 'white'
+        color: 'white',
       }}
       style={{
-        color: 'grey'
+        color: 'grey',
       }}
     >
       {children}
     </Link>
   );
-}
+};

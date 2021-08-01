@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 
-import Appbar from '../components/Appbar';
-import Info from '../components/Info';
+import { Appbar } from '../components/Appbar';
+import { Info } from '../components/Info';
 
 import '../style.css';
 

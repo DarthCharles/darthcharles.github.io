@@ -1,23 +1,19 @@
-- title: Qr-Code-Application
-  subtitle: A new Flutter project
+- title: Meal Planner
+  subtitle: An app that lets plans your weekly meals on your behalf.
   link: https://github.com/Mr404Found/Qr-Code-Application
+  image: meal-planner.jpg
 
-- title: Basic Music
-  subtitle: Basic Music Player That lets you to play music
+- title: 'Monorepo: RN + Web'
+  subtitle: A monorepo showcase for React Native + React Web
   link: https://github.com/Mr404Found/Basic-Music-Player
+  image: monorepo.png
 
-- title: Age Calculator
-  subtitle: Get Your Age
-  link: https://github.com/Mr404Found/AgeCalculator
+- title: 'Hooked 🎣'
+  subtitle: A complete guide for understanding Hooks in React.
+  link: https://github.com/Mr404Found/Basic-Music-Player
+  image: hooks.png
 
-- title: Qr-Code-Application
-  subtitle: A new Flutter project
-  link: https://github.com/Mr404Found/Qr-Code-Application
-
-- title: Qr-Code-Application
-  subtitle: A new Flutter project
-  link: https://github.com/Mr404Found/Qr-Code-Application
-
-- title: Qr-Code-Application
-  subtitle: A new Flutter project
-  link: https://github.com/Mr404Found/Qr-Code-Application
+- title: Repo Search
+  subtitle: A ruby on rails project to search github repositories.
+  link: https://github.com/Mr404Found/Basic-Music-Player
+  image: github.jpg

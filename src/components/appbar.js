@@ -1,7 +1,8 @@
 import React from 'react';
-import Intent from './Link';
 
-export default function Appbar() {
+import { Intent } from './Link';
+
+export const Appbar = () => {
   return (
     <div className="container my-3">
       <ul className="nav justify-content-center">
@@ -17,4 +18,4 @@ export default function Appbar() {
       </ul>
     </div>
   );
-}
+};

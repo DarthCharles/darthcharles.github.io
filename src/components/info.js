@@ -3,10 +3,10 @@ import React from 'react';
 import {
   FaGithub as Github,
   FaLinkedin as LinkedIn,
-  FaEnvelope as Mail
+  FaEnvelope as Mail,
 } from 'react-icons/fa';
 
-export default function info() {
+export const Info = () => {
   return (
     <div className="container">
       <div className="my-5"></div>
@@ -20,12 +20,16 @@ export default function info() {
         </span>
       </div>
       <div className="text-muted mx-5 my-4 h3 text-justify info">
-        A Passionate software engineer committed to delivering high-quality
-        solutions with the best performance. I like to learn new things and
-        always looking for new technologies to add to my skill stack. I’m a
-        self-taught person with a strong sense of ownership, communication and
-        leadership skills.
-        <p className="mt-3"> Send me a message, I've got candy. 😉</p>
+        I’m a Software engineer committed to deliver high quality and performant
+        solutions. Always eager learn something new and constantly looking
+        for new skills to add to my stack. I’m a self taught person with a
+        strong sense of ownership, communication and leadership skills.
+        <p className="mt-3">
+          Send me a message, I've got candy.{' '}
+          <span role="img" aria-label="wink emoji">
+            😉
+          </span>
+        </p>
       </div>
       <div className="h1 code mt-2 mb-3" style={{ color: '#CC7832' }}>
         {'end'}
@@ -46,4 +50,4 @@ export default function info() {
       </div>
     </div>
   );
-}
+};

@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
-import Appbar from './Appbar';
+
+import { Appbar } from './Appbar';
 
 export const Layout = ({ children }) => {
   return (
