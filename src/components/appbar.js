@@ -1,5 +1,5 @@
-import React from "react"
-import Intent from "./link"
+import React from 'react';
+import Intent from './Link';
 
 export default function Appbar() {
   return (
@@ -16,5 +16,5 @@ export default function Appbar() {
         </li>
       </ul>
     </div>
-  )
+  );
 }

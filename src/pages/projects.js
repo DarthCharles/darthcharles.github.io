@@ -1,20 +1,15 @@
-import React from "react"
-import "../style.css"
-import Appbar from "../components/appbar"
-import { graphql } from "gatsby"
-import Card from "../components/card"
-import { Helmet } from "react-helmet"
+import React from 'react';
+
+import { graphql } from 'gatsby';
+
+import Card from '../components/Card';
+import { Layout } from '../components/Layout';
 
 function Projects({ data }) {
-  const projectList = data.allProjectsYaml.edges
+  const projectList = data.allProjectsYaml.edges;
 
   return (
-    <div className="container-fluid">
-      <Appbar />
-      <Helmet>
-        <meta charSet="utf-8" />
-          <title>Projects | Carlos Contreras</title>
-      </Helmet>
+    <Layout>
       <div className="row">
         {projectList.map(({ node }) => {
           return (
@@ -24,14 +19,14 @@ function Projects({ data }) {
               link={node.link}
               key={node.id}
             />
-          )
+          );
         })}
       </div>
-    </div>
-  )
+    </Layout>
+  );
 }
 
-export default Projects
+export default Projects;
 
 export const query = graphql`
   {
@@ -46,4 +41,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

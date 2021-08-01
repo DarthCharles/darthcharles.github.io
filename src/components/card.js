@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react';
 
 function card(props) {
-  const { cardTitle, cardSubtitle, link } = props
+  const { cardTitle, cardSubtitle, link } = props;
   return (
     <div className="col-lg-4">
       <div className="card mx-3 my-5">
@@ -14,7 +14,7 @@ function card(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default card
+export default card;
