@@ -6,11 +6,17 @@ import { Layout } from '../components/Layout';
 import { Card } from '../components/Card';
 
 const Blog = ({ data }) => {
-  const blogList = data.allBlogYaml.edges;
+  const blogList = data.allBlogYaml?.edges ?? [];
 
   return (
     <Layout title={'Blog'}>
-      <div className="row">
+      <div className="container">
+        <div className="my-5" />
+        <div className="h1 code mb-4" style={{ color: '#CC7832' }}>
+          <span style={{ color: '#FFC66D' }}>blog</span>
+          <span style={{ color: '#CC7832' }}>.</span>
+        </div>
+        <div className="row">
         {blogList.map(({ node }) => {
           const cardImage = require(`../images/${node.image}`);
           return (
@@ -23,6 +29,7 @@ const Blog = ({ data }) => {
             />
           );
         })}
+        </div>
       </div>
     </Layout>
   );

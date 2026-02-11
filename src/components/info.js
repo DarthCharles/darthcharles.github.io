@@ -14,36 +14,33 @@ export const Info = () => {
         <span style={{ color: 'white' }}>Hello, I'm </span>
         Carlos.
       </div>
+      <p className="h4 text-muted mt-2">Senior Software Engineer</p>
       <div className="h1 code mt-5 mb-3">
         <span style={{ color: '#CC7832' }}>
           def {<span style={{ color: '#FFC66D' }}>about</span>}
         </span>
       </div>
       <div className="text-muted mx-5 my-4 h3 text-justify info">
-        <span role="img" aria-label="wink emoji">
+        <span role="img" aria-label="wave emoji">
           👋
         </span>{' '}
-        I’m a Software engineer committed to deliver high quality and performant
-        solutions. I'm always eager learn something new and constantly looking for
-        new skills to add to my stack.
-        <p className="mt-3">I like chess, walking the dog and cooking.</p>
-        <p className="mt-3">
-          Send me a message, I've got candy.{' '}
-          <span role="img" aria-label="wink emoji">
-            😉
-          </span>
-        </p>
+        Senior Software Engineer with 10+ years of experience building and
+        evolving complex web applications. I focus on delivering scalable,
+        maintainable solutions that balance product needs with strong engineering
+        fundamentals. I care about system quality, long-term sustainability, and
+        helping teams ship reliably at scale.
+        <p className="mt-3">I like chess, walking the dog, and cooking.</p>
       </div>
       <div className="h1 code mt-2 mb-3" style={{ color: '#CC7832' }}>
         {'end'}
       </div>
       <div className="h1 mt-5">
-        <a className="mr-5 icon" href="mailto://carlos.darth@gmail.com">
+        <a className="mr-5 icon" href="mailto:ccontreras.eng@gmail.com">
           <Mail />
         </a>
         <a
           className="mr-5 icon"
-          href="https://www.linkedin.com/in/carlos-contreras-hernandez/"
+          href="https://www.linkedin.com/in/ccontreras-hernandez/"
         >
           <LinkedIn />
         </a>

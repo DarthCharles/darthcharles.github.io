@@ -10,19 +10,26 @@ function Projects({ data }) {
 
   return (
     <Layout title={'Projects'}>
-      <div className="row">
-        {projectList.map(({ node }) => {
-          const cardImage = require(`../images/${node.image}`);
-          return (
-            <Card
-              cardTitle={node.title}
-              cardSubtitle={node.subtitle}
-              link={node.link}
-              cardImage={cardImage}
-              key={node.id}
-            />
-          );
-        })}
+      <div className="container">
+        <div className="my-5" />
+        <div className="h1 code mb-4" style={{ color: '#CC7832' }}>
+          <span style={{ color: '#FFC66D' }}>projects</span>
+          <span style={{ color: '#CC7832' }}>.</span>
+        </div>
+        <div className="row">
+          {projectList.map(({ node }) => {
+            const cardImage = require(`../images/${node.image}`);
+            return (
+              <Card
+                cardTitle={node.title}
+                cardSubtitle={node.subtitle}
+                link={node.link}
+                cardImage={cardImage}
+                key={node.id}
+              />
+            );
+          })}
+        </div>
       </div>
     </Layout>
   );

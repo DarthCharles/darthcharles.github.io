@@ -3,7 +3,7 @@
   "private": true,
   "description": "Carlos Contreras' web profile for the internet",
   "version": "0.1.0",
-  "author": "Carlos Contreras <carlos.darth@gmail.com>",
+  "author": "Carlos Contreras <ccontreras.eng@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.23",
@@ -36,6 +36,7 @@
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
