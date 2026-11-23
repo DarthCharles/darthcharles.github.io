@@ -35,7 +35,7 @@ Open [localhost:8000](http://localhost:8000/). If Gatsby is serving stale output
 | Navigation and global styles                   | [src/components/appbar.js](src/components/appbar.js) and [src/style.css](src/style.css)       |
 | Site manifest, favicon, and Google Tag Manager | [gatsby-config.js](gatsby-config.js)                                                          |
 
-Project and blog cards use `title`, `subtitle`, `link`, and `image`. Put card images in [src/images/](src/images/) and reference the exact filename in YAML.
+Project and blog cards use `title`, `subtitle`, `link`, and `image`. Project cards also use `linkLabel` for the primary link and accept an optional `source` URL for a separate source link. Put card images in [src/images/](src/images/) and reference the exact filename in YAML.
 
 ## Preview and publish
 

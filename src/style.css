@@ -40,29 +40,3 @@ body {
   transform: scale(1.5);
   color: #ff8a00;
 }
-
-.card {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 0.1s ease-in;
-  background-color: #324359 !important;
-}
-
-.card p {
-  font-size: 0.7em;
-  color: #ccc !important;
-}
-
-.card a {
-  font-size: 0.7em;
-  color: #ffc66d;
-}
-
-.card:hover {
-  transform: scale(1.09);
-}
-
-.card img {
-  object-fit: cover;
-  width: 100%;
-  height: 200px;
-}

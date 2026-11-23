@@ -1,24 +1,48 @@
 import React from 'react';
 
-export const Card = (props) => {
-  const { cardTitle, cardSubtitle, cardImage, link } = props;
-  return (
-    <div className="col-lg-4">
-      <div className="card mx-3 my-5">
-        <div className="card-body">
-          <img src={cardImage} alt="cover" />
-          <h3 className="card-title mt-3">{cardTitle}</h3>
-          <p className="card-text">{cardSubtitle}</p>
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            See
+import * as styles from './card.module.css';
+
+export const CardGrid = ({ children }) => (
+  <ul className={styles.grid} role="list">
+    {children}
+  </ul>
+);
+
+export const Card = ({
+  title,
+  subtitle,
+  image,
+  link,
+  linkLabel,
+  source,
+  openInNewTab = false,
+}) => (
+  <li className={styles.card}>
+    <img
+      className={styles.preview}
+      src={require(`../images/${image}`).default}
+      alt=""
+      width="1200"
+      height="630"
+    />
+    <div className={styles.details}>
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+      <div className={styles.links}>
+        <a
+          href={link}
+          aria-label={`${linkLabel} for ${title}`}
+          target={openInNewTab ? '_blank' : undefined}
+          rel={openInNewTab ? 'noopener noreferrer' : undefined}
+        >
+          {linkLabel}
+        </a>
+        {source && (
+          <a href={source} aria-label={`View source for ${title}`}>
+            View source
           </a>
-        </div>
+        )}
       </div>
     </div>
-  );
-};
+  </li>
+);

@@ -1,19 +1,24 @@
-- title: Meal Planner
-  subtitle: An app that automatically plans your weekly meals for you.
+- title: Comal
+  subtitle: Build a meal library and turn it into weekly menus and shopping lists. A React PWA backed by a Rails API.
   link: https://github.com/DarthCharles/meal_planner
-  image: meal-planner.jpg
+  linkLabel: View source
+  image: project-comal.webp
 
-- title: 'Monorepo: RN + Web'
-  subtitle: A monorepo showcase for React Native + React Web
-  link: https://github.com/DarthCharles/sg_virtual_2020
-  image: monorepo.png
+- title: Greda
+  subtitle: A React design system with composable components, customizable CSS tokens, and interactive examples in Storybook.
+  link: https://elegant-hotteok-cbb834.netlify.app/
+  linkLabel: Open Storybook
+  source: https://github.com/DarthCharles/greda
+  image: project-greda.webp
 
-- title: 'Hooked 🎣'
-  subtitle: A complete guide for understanding Hooks in React.
-  link: https://github.com/DarthCharles/react-hooks-guide
-  image: hooks.png
+- title: Productos Dogar
+  subtitle: A Spanish-language site for regional sauces and chile blends, with a product catalog, recipes, and a guide to where to buy them. Built with Next.js and Greda.
+  link: https://productos-dogar.vercel.app/
+  linkLabel: Visit website
+  image: project-productos-dogar.webp
 
-- title: Repo Search
-  subtitle: A ruby on rails project to search github repositories.
-  link: https://github.com/DarthCharles/repo_search
-  image: github.jpg
+- title: This Portfolio
+  subtitle: My personal site for projects, writing, and my résumé. Built with Gatsby and React and hosted on GitHub Pages.
+  link: https://github.com/DarthCharles/darthcharles.github.io/tree/code
+  linkLabel: View source
+  image: project-portfolio.webp

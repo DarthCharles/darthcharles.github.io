@@ -2,7 +2,7 @@ import React from 'react';
 
 import { graphql } from 'gatsby';
 
-import { Card } from '../components/card';
+import { Card, CardGrid } from '../components/card';
 import { Layout, PageTitle } from '../components/Layout';
 
 function Projects({ data }) {
@@ -10,27 +10,17 @@ function Projects({ data }) {
 
   return (
     <Layout>
-      <div className="container">
+      <main className="container pb-5">
         <div className="my-5" />
-        <div className="h1 code mb-4" style={{ color: '#CC7832' }}>
-          <span style={{ color: '#FFC66D' }}>projects</span>
-          <span style={{ color: '#CC7832' }}>.</span>
-        </div>
-        <div className="row">
-          {projectList.map(({ node }) => {
-            const cardImage = require(`../images/${node.image}`).default;
-            return (
-              <Card
-                cardTitle={node.title}
-                cardSubtitle={node.subtitle}
-                link={node.link}
-                cardImage={cardImage}
-                key={node.id}
-              />
-            );
-          })}
-        </div>
-      </div>
+        <h1 className="code mb-4" style={{ color: '#FFC66D' }}>
+          projects<span style={{ color: '#CC7832' }}>.</span>
+        </h1>
+        <CardGrid>
+          {projectList.map(({ node }) => (
+            <Card key={node.id} {...node} />
+          ))}
+        </CardGrid>
+      </main>
     </Layout>
   );
 }
@@ -47,6 +37,8 @@ export const query = graphql`
           title
           subtitle
           link
+          linkLabel
+          source
           image
           id
         }
