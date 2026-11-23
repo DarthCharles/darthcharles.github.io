@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Intent } from './Link';
+import { Intent } from './link';
 
 export const Appbar = () => {
   return (

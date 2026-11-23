@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { Helmet } from 'react-helmet';
-
-import { Appbar } from '../components/Appbar';
-import { Info } from '../components/Info';
+import { Appbar } from '../components/appbar';
+import { Info } from '../components/info';
+import { PageTitle } from '../components/Layout';
 
 import '../style.css';
 
@@ -12,12 +11,10 @@ function index() {
     <div>
       <Appbar />
       <Info />
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Home | Carlos Contreras</title>
-      </Helmet>
     </div>
   );
 }
 
 export default index;
+
+export const Head = () => <PageTitle title="Home" />;

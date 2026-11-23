@@ -1,103 +1,58 @@
 # Carlos Contreras — Portfolio
 
-Personal portfolio site built with [Gatsby](https://www.gatsbyjs.com/). Live at **[darthcharles.github.io](https://darthcharles.github.io)**.
+Personal profile and portfolio built with Gatsby 5 and React 19. The static site is hosted on GitHub Pages. [Visit darthcharles.github.io](https://darthcharles.github.io/)
 
-## Tech stack
+## Branches
 
-- **Gatsby 2** — static site generator
-- **React** — UI
-- **Bootstrap 4** — layout and styling
-- **YAML** — content for projects and blog (in `content/`)
-- **gh-pages** — deploy to GitHub Pages
+| Branch   | Role                                                                                            |
+| -------- | ----------------------------------------------------------------------------------------------- |
+| `code`   | Editable source, dependencies, and this README. Start here.                                     |
+| `master` | Default GitHub branch. Contains the generated site that GitHub Pages publishes from `/ (root)`. |
 
-## Project structure
+GitHub opens `master` by default, so select `code` to browse the source and README. [Source branch](https://github.com/DarthCharles/darthcharles.github.io/tree/code) · [GitHub Pages settings](https://github.com/DarthCharles/darthcharles.github.io/settings/pages)
 
-```
-├── content/           # Editable content (no code)
-│   ├── projects.yaml  # Project cards (title, subtitle, link, image)
-│   └── blog.yml       # Blog post cards
-├── src/
-│   ├── components/    # Appbar, Info, Card, Layout, Link
-│   ├── images/        # Favicon + images referenced in content
-│   ├── pages/         # Routes: index, resume, projects, blog, 404
-│   └── style.css      # Global styles
-├── gatsby-config.js   # Site metadata, plugins, manifest (favicon)
-└── package.json       # Scripts and dependencies
-```
+## Run locally
 
-- **Home** — `src/pages/index.js` + `src/components/Info.js`
-- **Resume** — `src/pages/resume.js` (experience, education, skills are in that file)
-- **Projects / Blog** — data comes from `content/projects.yaml` and `content/blog.yml`; add images to `src/images/` and reference by filename in the YAML
+Use Node.js 24 and Yarn Classic (1.x). With nvm, run `nvm install` once to install the version in `.nvmrc`, then use `nvm use` when returning to the project.
 
-## Local development
-
-**Prerequisites:** Node.js (LTS), yarn or npm.
-
-```bash
-# Install dependencies
-yarn install
-
-# Start dev server (with hot reload)
+```sh
+git switch code
+nvm use
+yarn install --frozen-lockfile
 yarn develop
 ```
 
-Open **http://localhost:8000**. If you hit `ECONNRESET` or similar with `yarn develop`, try:
+Open [localhost:8000](http://localhost:8000/). If Gatsby is serving stale output, stop the server and run `yarn clean` before restarting it. That clears `.cache/` and `public/`.
 
-```bash
-yarn clean
-yarn install
-yarn develop
-```
+## Where to edit
 
-Or use a clean build and serve the static output:
+| What                                           | Source                                                                                        |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Home and profile links                         | [src/pages/index.js](src/pages/index.js) and [src/components/info.js](src/components/info.js) |
+| Resume, experience, and skills                 | [src/pages/resume.js](src/pages/resume.js)                                                    |
+| Project cards                                  | [content/projects.yaml](content/projects.yaml)                                                |
+| Blog cards                                     | [content/blog.yml](content/blog.yml)                                                          |
+| Navigation and global styles                   | [src/components/appbar.js](src/components/appbar.js) and [src/style.css](src/style.css)       |
+| Site manifest, favicon, and Google Tag Manager | [gatsby-config.js](gatsby-config.js)                                                          |
 
-```bash
+Project and blog cards use `title`, `subtitle`, `link`, and `image`. Put card images in [src/images/](src/images/) and reference the exact filename in YAML.
+
+## Preview and publish
+
+From `code`, build and preview the production output locally.
+
+```sh
 yarn build
 yarn serve
 ```
 
-Then open **http://localhost:9000**.
+Open [localhost:9000](http://localhost:9000/) and check the pages you changed. When ready, commit the source changes on `code` and publish with a GitHub account that can push to the repository.
 
-## Deploy (GitHub Pages)
-
-The site is deployed by pushing the **built** site to the branch GitHub Pages uses (e.g. `master` or `main`). Source code stays on your working branch (e.g. `code`).
-
-**One command:**
-
-```bash
+```sh
+git push origin code
 yarn deploy
 ```
 
-This runs:
+`yarn deploy` builds the current working tree into `public/` and pushes that output to `master` on `origin`. It adds a `.nojekyll` file so GitHub Pages serves the generated files directly, including the `_gatsby/` directory. Pushing `code` saves the source changes. The deploy command publishes them separately. [Deployment history](https://github.com/DarthCharles/darthcharles.github.io/deployments)
 
-1. `gatsby build` — writes the static site to `public/`
-2. `gh-pages -d public -b master` — pushes the contents of `public/` to the `master` branch
-
-**If your GitHub Pages branch is `main` instead of `master`**, edit `package.json`:
-
-```json
-"deploy": "gatsby build && gh-pages -d public -b main"
-```
-
-**Typical workflow:**
-
-1. Make changes on your branch (e.g. `code`).
-2. Commit and push your branch if you want it in the repo.
-3. Run `yarn deploy` from that branch. The `master` (or `main`) branch will be updated with only the built files; your repo will have both source and the deployed site.
-
-No API keys or secrets are required; the project has no server or env vars for deployment.
-
-## Scripts
-
-| Script     | Command           | Description                          |
-| ---------- | ----------------- | ------------------------------------ |
-| `develop`  | `yarn develop`    | Dev server with hot reload           |
-| `build`    | `yarn build`      | Production build into `public/`      |
-| `serve`    | `yarn serve`      | Serve the built site (e.g. port 9000)|
-| `clean`    | `yarn clean`      | Clear Gatsby cache and `public/`     |
-| `deploy`   | `yarn deploy`     | Build and push to GitHub Pages branch|
-| `format`   | `yarn format`     | Run Prettier on the codebase         |
-
-## License
-
-MIT.
+[MIT license](LICENSE)

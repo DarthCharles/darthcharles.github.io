@@ -2,14 +2,14 @@ import React from 'react';
 
 import { graphql } from 'gatsby';
 
-import { Card } from '../components/Card';
-import { Layout } from '../components/Layout';
+import { Card } from '../components/card';
+import { Layout, PageTitle } from '../components/Layout';
 
 function Projects({ data }) {
   const projectList = data.allProjectsYaml.edges;
 
   return (
-    <Layout title={'Projects'}>
+    <Layout>
       <div className="container">
         <div className="my-5" />
         <div className="h1 code mb-4" style={{ color: '#CC7832' }}>
@@ -18,7 +18,7 @@ function Projects({ data }) {
         </div>
         <div className="row">
           {projectList.map(({ node }) => {
-            const cardImage = require(`../images/${node.image}`);
+            const cardImage = require(`../images/${node.image}`).default;
             return (
               <Card
                 cardTitle={node.title}
@@ -36,6 +36,8 @@ function Projects({ data }) {
 }
 
 export default Projects;
+
+export const Head = () => <PageTitle title="Projects" />;
 
 export const query = graphql`
   {

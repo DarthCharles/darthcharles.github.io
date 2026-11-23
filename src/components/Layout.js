@@ -1,16 +1,14 @@
 import React from 'react';
 
-import { Helmet } from 'react-helmet';
+import { Appbar } from './appbar';
 
-import { Appbar } from './Appbar';
+export const PageTitle = ({ title }) => (
+  <title>{`${title} | Carlos Contreras`}</title>
+);
 
-export const Layout = ({ children, title = 'Home' }) => {
+export const Layout = ({ children }) => {
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{`${title} | Carlos Contreras`}</title>
-      </Helmet>
       <Appbar />
       {children}
     </div>

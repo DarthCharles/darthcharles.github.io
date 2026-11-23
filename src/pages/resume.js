@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Layout } from '../components/Layout';
+import { Layout, PageTitle } from '../components/Layout';
 
 import '../style.css';
 
@@ -59,7 +59,7 @@ const skills = [
 
 function Resume() {
   return (
-    <Layout title="Resume">
+    <Layout>
       <div className="container">
         <div className="my-5" />
 
@@ -127,3 +127,5 @@ function Resume() {
 }
 
 export default Resume;
+
+export const Head = () => <PageTitle title="Resume" />;
