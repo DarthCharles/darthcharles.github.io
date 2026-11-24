@@ -3,9 +3,9 @@ const workbenchDarkSurface = `#1f2b3b`;
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Carlos Contreras`,
+    description: `Portfolio, résumé, projects, and writing by Carlos Contreras.`,
+    author: `Carlos Contreras`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
