@@ -83,16 +83,26 @@ function Resume() {
     <Layout>
       <main className="mx-auto max-w-[71.25rem] px-md py-2xl">
         <div className="max-w-[48rem]">
-          <h1 className="mb-xl font-code text-[2.5rem] leading-tight font-medium text-action">
+          <h1 className="mb-lg font-code text-[2.5rem] leading-tight font-medium text-action">
             Résumé
+            <span className="text-[color:hsl(var(--workbench-syntax-keyword))]">
+              .
+            </span>
           </h1>
-          <div className="flex flex-col gap-xl text-body text-secondary">
+          <div className="flex flex-col gap-xl text-body text-primary">
+            <p className="max-w-[65ch]">
+              Senior Software Engineer with 10+ years of experience building and
+              evolving complex web applications. I focus on delivering scalable,
+              maintainable solutions that balance product needs with strong
+              engineering fundamentals. I care about system quality, long-term
+              sustainability, and helping teams ship reliably at scale.
+            </p>
             <ResumeSection title="experience">
               <div className="flex flex-col gap-lg">
                 {experience.map((job) => (
                   <div key={job.company}>
                     <h3 className={entryTitleClass}>{job.company}</h3>
-                    <p className="mb-sm text-caption">
+                    <p className="mb-sm text-caption text-secondary">
                       {job.role} | {job.period}
                     </p>
                     <ul className="m-0 list-disc space-y-xs ps-lg">
@@ -107,7 +117,7 @@ function Resume() {
 
             <ResumeSection title="education">
               <h3 className={entryTitleClass}>{education.school}</h3>
-              <p className="mb-0 text-caption">
+              <p className="mb-0 text-caption text-secondary">
                 {education.degree} | {education.period}
               </p>
             </ResumeSection>
