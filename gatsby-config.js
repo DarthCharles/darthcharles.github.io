@@ -10,13 +10,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        id: `GTM-MC5T86W5`,
-        includeInDevelopment: false,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Carlos Contreras`,
@@ -36,4 +29,4 @@ module.exports = {
       },
     },
   ],
-}
+};

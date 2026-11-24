@@ -1,11 +1,11 @@
 - title: Comal
-  subtitle: Build a meal library and turn it into weekly menus and shopping lists. A React PWA backed by a Rails API.
+  subtitle: I built a React PWA and Rails API to make weekly meal planning easier. Meals saved in the library can be added to a weekly menu and turned into a shopping list.
   link: https://github.com/DarthCharles/meal_planner
   linkLabel: View source
   image: project-comal.webp
 
 - title: Greda
-  subtitle: A React design system with composable components, customizable CSS tokens, and interactive examples in Storybook.
+  subtitle: I built Greda to give React apps a shared set of components and CSS tokens. Apps can compose and theme those components, and Storybook lets developers try them before integrating them.
   link: https://elegant-hotteok-cbb834.netlify.app/
   linkLabel: Open Storybook
   source: https://github.com/DarthCharles/greda

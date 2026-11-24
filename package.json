@@ -7,7 +7,6 @@
   "dependencies": {
     "@darthcharles/greda": "2.1.0",
     "gatsby": "^5.16.1",
-    "gatsby-plugin-google-tagmanager": "^5.16.0",
     "gatsby-plugin-manifest": "^5.16.0",
     "gatsby-source-filesystem": "^5.16.0",
     "gatsby-transformer-yaml": "^5.16.0",

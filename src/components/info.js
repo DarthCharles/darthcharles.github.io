@@ -5,14 +5,27 @@ import { ArrowRight, Github, Linkedin, Mail } from '@darthcharles/greda/icons';
 
 import { Link } from 'gatsby';
 
+import { trackAnalyticsEvent } from '../analytics';
+
 const contacts = [
-  { href: 'mailto:ccontreras.eng@gmail.com', label: 'Email', Icon: Mail },
+  {
+    href: 'mailto:ccontreras.eng@gmail.com',
+    label: 'Email',
+    Icon: Mail,
+    analyticsEvent: 'contact_email_click',
+  },
   {
     href: 'https://www.linkedin.com/in/ccontreras-hernandez/',
     label: 'LinkedIn',
     Icon: Linkedin,
+    analyticsEvent: 'contact_linkedin_click',
   },
-  { href: 'https://github.com/DarthCharles', label: 'GitHub', Icon: Github },
+  {
+    href: 'https://github.com/DarthCharles',
+    label: 'GitHub',
+    Icon: Github,
+    analyticsEvent: 'github_profile_click',
+  },
 ];
 
 const syntaxClassName = 'block font-code text-lg';
@@ -41,14 +54,17 @@ export const Info = () => (
           </Link>
         </Button>
         <div className="flex flex-wrap gap-3xs">
-          {contacts.map(({ href, label, Icon }) => (
+          {contacts.map(({ href, label, Icon, analyticsEvent }) => (
             <Button
               key={href}
               asChild
               variant="ghost"
               className="min-h-[44px] border-0 px-xs sm:px-sm"
             >
-              <a href={href}>
+              <a
+                href={href}
+                onClick={() => trackAnalyticsEvent(analyticsEvent)}
+              >
                 <Icon aria-hidden="true" /> {label}
               </a>
             </Button>
