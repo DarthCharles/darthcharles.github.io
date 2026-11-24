@@ -37,24 +37,24 @@ const education = {
 };
 
 const skills = [
+  'Frontend Architecture',
+  'Design Systems',
+  'REST APIs',
+  'CI/CD',
+  'Build Optimization',
+  'Web Performance',
+  'TypeScript',
   'React',
   'Next.js',
-  'TypeScript',
-  'JavaScript',
-  'HTML',
-  'CSS',
-  'Frontend Architecture',
-  'Server-Side Rendering',
-  'REST APIs',
-  'State Management',
-  'Web Performance',
-  'Bundle Optimization',
-  'Build Optimization',
-  'CI/CD',
+  'Ruby on Rails',
+  'Tailwind CSS',
   'Docker',
   'GitHub Actions',
   'Jest',
   'Cypress',
+  'AI-Assisted Development',
+  'OpenAI Codex',
+  'Claude Code',
 ];
 
 const entryTitleClass = 'mb-2xs text-title text-syntax-type';
