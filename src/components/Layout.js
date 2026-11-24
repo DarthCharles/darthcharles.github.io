@@ -6,11 +6,9 @@ export const PageTitle = ({ title }) => (
   <title>{`${title} | Carlos Contreras`}</title>
 );
 
-export const Layout = ({ children }) => {
-  return (
-    <div>
-      <Appbar />
-      {children}
-    </div>
-  );
-};
+export const Layout = ({ children }) => (
+  <div className="min-h-screen surface-primary">
+    <Appbar />
+    {children}
+  </div>
+);

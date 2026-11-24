@@ -45,7 +45,8 @@ export async function swipeOnClick(event, to) {
   if (activeSwipe) return;
 
   const cover = document.createElement('div');
-  cover.className = 'navigation-cover';
+  cover.className =
+    'navigation-cover pointer-events-none fixed inset-0 z-[1200] surface-secondary [transform:translateX(100%)]';
   cover.setAttribute('aria-hidden', 'true');
   document.body.append(cover);
 

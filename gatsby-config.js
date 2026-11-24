@@ -1,3 +1,6 @@
+// The manifest requires a literal color. This is Workbench dark's --surface-primary.
+const workbenchDarkSurface = `#1f2b3b`;
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -5,6 +8,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
@@ -18,8 +22,8 @@ module.exports = {
         name: `Carlos Contreras`,
         short_name: `Carlos`,
         start_url: `/`,
-        background_color: `#1f2b3b`,
-        theme_color: `#8e44ad`,
+        background_color: workbenchDarkSurface,
+        theme_color: workbenchDarkSurface,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },

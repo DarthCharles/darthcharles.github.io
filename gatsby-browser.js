@@ -1,6 +1,5 @@
 require('bootstrap/dist/js/bootstrap');
-require('bootstrap/dist/css/bootstrap.css');
-require('./src/navigation-transition.css');
+require('./src/workbench.css');
 
 const { revealPage } = require('./src/navigation-transition');
 

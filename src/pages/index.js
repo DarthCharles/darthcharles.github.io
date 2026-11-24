@@ -1,17 +1,13 @@
 import React from 'react';
 
-import { Appbar } from '../components/appbar';
 import { Info } from '../components/info';
-import { PageTitle } from '../components/Layout';
-
-import '../style.css';
+import { Layout, PageTitle } from '../components/Layout';
 
 function index() {
   return (
-    <div>
-      <Appbar />
+    <Layout>
       <Info />
-    </div>
+    </Layout>
   );
 }
 

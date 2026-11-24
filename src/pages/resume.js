@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Layout, PageTitle } from '../components/Layout';
+import { Badge } from '@darthcharles/greda';
 
-import '../style.css';
+import { Layout, PageTitle } from '../components/Layout';
 
 const experience = [
   {
@@ -10,7 +10,7 @@ const experience = [
     role: 'Senior Software Engineer',
     period: '2019 - Current',
     bullets: [
-      'Led high-impact frontend and platform initiatives for a large-scale EMR system, enabling the launch of numerous treatment verticals and supporting the company\'s expansion into lab-based and longitudinal care.',
+      "Led high-impact frontend and platform initiatives for a large-scale EMR system, enabling the launch of numerous treatment verticals and supporting the company's expansion into lab-based and longitudinal care.",
       'Collaborated cross-functionally to expand the platform to all 50 U.S. states, enabling phone and video consultations, primary care, and mental health services on a regulated healthcare platform.',
       'Built the Biomarker Admin Tool, empowering clinical teams to manage lab biomarker configurations without engineering support, eliminating operational bottlenecks and accelerating lab-based treatment iteration.',
       'Architected and led the migration to Next.js, modernizing the frontend stack, improving performance, security, and long-term maintainability while reducing technical debt across legacy EMR UI.',
@@ -57,71 +57,81 @@ const skills = [
   'Cypress',
 ];
 
+const entryTitleClass =
+  'mb-2xs text-title text-[color:hsl(var(--workbench-syntax-type))]';
+
+const ResumeSection = ({ title, children }) => (
+  <section aria-labelledby={`resume-${title}`}>
+    <h2
+      id={`resume-${title}`}
+      className="mb-md font-code text-title text-action"
+    >
+      {title}
+      <span
+        aria-hidden="true"
+        className="text-[color:hsl(var(--workbench-syntax-keyword))]"
+      >
+        .
+      </span>
+    </h2>
+    {children}
+  </section>
+);
+
 function Resume() {
   return (
     <Layout>
-      <div className="container">
-        <div className="my-5" />
+      <main className="mx-auto max-w-[71.25rem] px-md py-2xl">
+        <div className="max-w-[48rem]">
+          <h1 className="mb-xl font-code text-[2.5rem] leading-tight font-medium text-action">
+            Résumé
+          </h1>
+          <div className="flex flex-col gap-xl text-body! text-[color:hsl(var(--text-secondary))]">
+            <ResumeSection title="experience">
+              <div className="flex flex-col gap-lg">
+                {experience.map((job) => (
+                  <div key={job.company}>
+                    <h3 className={entryTitleClass}>{job.company}</h3>
+                    <p className="mb-sm text-caption">
+                      {job.role} | {job.period}
+                    </p>
+                    <ul className="m-0 list-disc space-y-xs ps-lg">
+                      {job.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </ResumeSection>
 
-        {/* Experience */}
-        <div className="h1 code mb-3" style={{ color: '#CC7832' }}>
-          <span style={{ color: '#FFC66D' }}>experience</span>
-          <span style={{ color: '#CC7832' }}>.</span>
-        </div>
-        {experience.map((job, i) => (
-          <div key={i} className="mb-5">
-            <h2 className="h4 mb-1" style={{ color: '#8e44ad' }}>
-              {job.company}
-            </h2>
-            <p className="text-muted mb-2" style={{ fontSize: '0.95rem' }}>
-              {job.role} | {job.period}
-            </p>
-            <ul className="text-muted pl-4" style={{ lineHeight: 1.6 }}>
-              {job.bullets.map((bullet, j) => (
-                <li key={j} className="mb-2">
-                  {bullet}
-                </li>
-              ))}
-            </ul>
+            <ResumeSection title="education">
+              <h3 className={entryTitleClass}>{education.school}</h3>
+              <p className="mb-0 text-caption">
+                {education.degree} | {education.period}
+              </p>
+            </ResumeSection>
+
+            <ResumeSection title="skills">
+              <ul
+                className="m-0 flex list-none flex-wrap gap-xs p-0"
+                role="list"
+              >
+                {skills.map((skill) => (
+                  <li key={skill}>
+                    <Badge
+                      variant="secondary"
+                      className="border-0 bg-[color:hsl(var(--surface-secondary))] text-[color:hsl(var(--text-primary))]"
+                    >
+                      {skill}
+                    </Badge>
+                  </li>
+                ))}
+              </ul>
+            </ResumeSection>
           </div>
-        ))}
-
-        {/* Education */}
-        <div className="h1 code mt-5 mb-3" style={{ color: '#CC7832' }}>
-          <span style={{ color: '#FFC66D' }}>education</span>
-          <span style={{ color: '#CC7832' }}>.</span>
         </div>
-        <div className="mb-5">
-          <h2 className="h4 mb-1" style={{ color: '#8e44ad' }}>
-            {education.school}
-          </h2>
-          <p className="text-muted" style={{ fontSize: '0.95rem' }}>
-            {education.degree} | {education.period}
-          </p>
-        </div>
-
-        {/* Skills */}
-        <div className="h1 code mt-5 mb-3" style={{ color: '#CC7832' }}>
-          <span style={{ color: '#FFC66D' }}>skills</span>
-          <span style={{ color: '#CC7832' }}>.</span>
-        </div>
-        <div className="d-flex flex-wrap mb-5">
-          {skills.map((skill, i) => (
-            <span
-              key={i}
-              className="mr-2 mb-2 px-3 py-1"
-              style={{
-                backgroundColor: '#324359',
-                borderRadius: '4px',
-                fontSize: '0.9rem',
-                color: '#ccc',
-              }}
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </div>
+      </main>
     </Layout>
   );
 }

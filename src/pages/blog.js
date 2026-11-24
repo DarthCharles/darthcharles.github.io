@@ -10,10 +10,12 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
-      <main className="container pb-5">
-        <div className="my-5" />
-        <h1 className="code mb-4" style={{ color: '#FFC66D' }}>
-          blog<span style={{ color: '#CC7832' }}>.</span>
+      <main className="mx-auto max-w-[71.25rem] px-md py-2xl">
+        <h1 className="mb-lg font-code text-[2.5rem] leading-tight font-medium text-action">
+          blog
+          <span className="text-[color:hsl(var(--workbench-syntax-keyword))]">
+            .
+          </span>
         </h1>
         <CardGrid>
           {blogList.map(({ node }) => (
