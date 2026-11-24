@@ -32,7 +32,7 @@ Open [localhost:8000](http://localhost:8000/). If Gatsby is serving stale output
 | Resume, experience, and skills                 | [src/pages/resume.js](src/pages/resume.js)                                                    |
 | Project cards                                  | [content/projects.yaml](content/projects.yaml)                                                |
 | Blog cards                                     | [content/blog.yml](content/blog.yml)                                                          |
-| Navigation and global styles                   | [src/components/appbar.js](src/components/appbar.js) and [src/style.css](src/style.css)       |
+| Navigation and global styles                   | [src/components/appbar.js](src/components/appbar.js) and [src/workbench.css](src/workbench.css) |
 | Site manifest, favicon, and Google Tag Manager | [gatsby-config.js](gatsby-config.js)                                                          |
 
 Project and blog cards use `title`, `subtitle`, `link`, and `image`. Project cards also use `linkLabel` for the primary link and accept an optional `source` URL for a separate source link. Put card images in [src/images/](src/images/) and reference the exact filename in YAML.

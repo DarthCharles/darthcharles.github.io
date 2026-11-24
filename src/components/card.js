@@ -1,7 +1,7 @@
 import React from 'react';
 
 const linkClassName =
-  'inline-flex min-h-xl items-center text-[0.875rem] text-action underline underline-offset-[0.2em] hover:text-[color:hsl(var(--primary-hover))] focus-visible:outline-2 focus-visible:outline-offset-[3px]';
+  'inline-flex min-h-xl items-center text-[0.875rem] text-action underline underline-offset-[0.2em] hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-[3px]';
 
 export const CardGrid = ({ children }) => (
   <ul
@@ -21,7 +21,7 @@ export const Card = ({
   source,
   openInNewTab = false,
 }) => (
-  <li className="flex flex-col overflow-hidden rounded-[var(--radius-lg)] surface-raised">
+  <li className="flex flex-col overflow-hidden rounded-lg surface-raised">
     <img
       className="block aspect-[1200/630] h-auto w-full object-cover"
       src={require(`../images/${image}`).default}
@@ -33,7 +33,7 @@ export const Card = ({
       <h2 className="mb-xs text-[1.375rem] leading-[1.2] font-medium">
         {title}
       </h2>
-      <p className="mb-md text-[1rem] leading-[1.6] text-[color:hsl(var(--text-secondary))]">
+      <p className="mb-md text-[1rem] leading-[1.6] text-secondary">
         {subtitle}
       </p>
       <div className="mt-auto flex flex-wrap gap-x-[1.25rem] gap-y-xs">

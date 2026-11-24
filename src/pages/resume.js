@@ -86,7 +86,7 @@ function Resume() {
           <h1 className="mb-xl font-code text-[2.5rem] leading-tight font-medium text-action">
             Résumé
           </h1>
-          <div className="flex flex-col gap-xl text-body! text-[color:hsl(var(--text-secondary))]">
+          <div className="flex flex-col gap-xl text-body text-secondary">
             <ResumeSection title="experience">
               <div className="flex flex-col gap-lg">
                 {experience.map((job) => (
@@ -121,7 +121,7 @@ function Resume() {
                   <li key={skill}>
                     <Badge
                       variant="secondary"
-                      className="border-0 bg-[color:hsl(var(--surface-secondary))] text-[color:hsl(var(--text-primary))]"
+                      className="border-0 surface-secondary text-primary"
                     >
                       {skill}
                     </Badge>

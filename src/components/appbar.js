@@ -10,7 +10,7 @@ const pages = [
 ];
 
 export const Appbar = () => (
-  <header className="border-b border-[color:hsl(var(--border-primary))] surface-secondary">
+  <header className="border-b border-primary surface-secondary">
     <nav
       aria-label="Site navigation"
       className="mx-auto max-w-6xl px-md sm:px-lg"

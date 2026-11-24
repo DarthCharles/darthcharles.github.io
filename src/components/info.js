@@ -24,13 +24,11 @@ export const Info = () => (
           Carlos.
         </span>
       </h1>
-      <p className="mb-0 text-title text-[color:hsl(var(--text-secondary))]">
-        Senior Software Engineer
-      </p>
+      <p className="mb-0 text-title text-secondary">Senior Software Engineer</p>
 
       <section aria-labelledby="about-heading" className="mt-2xl md:mt-3xl">
         <h2 id="about-heading" className="mb-sm text-title">
-          <code className="font-code text-action">
+          <code className="font-code text-[0.875em] text-action">
             <span
               aria-hidden="true"
               className="text-[color:hsl(var(--workbench-syntax-keyword))]"
@@ -40,7 +38,7 @@ export const Info = () => (
             about
           </code>
         </h2>
-        <div className="max-w-[68ch] text-body! text-[color:hsl(var(--text-secondary))]">
+        <div className="max-w-[68ch] text-body text-secondary">
           <p className="mb-md">
             Senior Software Engineer with 10+ years of experience building and
             evolving complex web applications. I focus on delivering scalable,
@@ -53,11 +51,7 @@ export const Info = () => (
       </section>
 
       <div className="mt-xl flex flex-col items-start gap-xs sm:flex-row sm:flex-wrap sm:items-center">
-        <Button
-          asChild
-          size="lg"
-          className="border-0 bg-[color:hsl(var(--primary))] no-underline hover:bg-primary-hover"
-        >
+        <Button asChild size="lg" className="border-0">
           <Link to="/resume">
             View résumé <ArrowRight aria-hidden="true" />
           </Link>
@@ -68,7 +62,7 @@ export const Info = () => (
               key={href}
               asChild
               variant="ghost"
-              className="min-h-[44px] border-0 px-sm text-[color:hsl(var(--text-secondary))] no-underline"
+              className="min-h-[44px] border-0 px-sm text-secondary"
             >
               <a href={href}>
                 <Icon aria-hidden="true" /> {label}

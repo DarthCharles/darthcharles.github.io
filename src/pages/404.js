@@ -10,11 +10,7 @@ function ErrorPage() {
     <Layout>
       <main className="mx-auto max-w-6xl px-md py-2xl sm:px-lg">
         <h1 className="mb-lg text-title">404 Page Not Found</h1>
-        <Button
-          asChild
-          size="lg"
-          className="border-0 bg-[color:hsl(var(--primary))] no-underline hover:bg-primary-hover"
-        >
+        <Button asChild size="lg" className="border-0">
           <Link to="/">Back to Home</Link>
         </Button>
       </main>

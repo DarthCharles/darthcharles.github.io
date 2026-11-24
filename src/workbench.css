@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Source+Code+Pro&display=swap');
 
-@layer legacy, theme, base, components, utilities;
-@import 'bootstrap/dist/css/bootstrap.css' layer(legacy);
-@import 'tailwindcss/theme.css' layer(theme);
-/* Bootstrap still supplies the reset while its components are being migrated. */
-@import 'tailwindcss/utilities.css' layer(utilities) source('./');
+@import 'tailwindcss' source('./');
 @import '@darthcharles/greda/styles.css' layer(components);
 @import '@darthcharles/greda/tokens.css';
 @import '@darthcharles/greda/themes/workbench.css';
