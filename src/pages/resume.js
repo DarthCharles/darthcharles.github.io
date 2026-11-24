@@ -57,8 +57,7 @@ const skills = [
   'Cypress',
 ];
 
-const entryTitleClass =
-  'mb-2xs text-title text-[color:hsl(var(--workbench-syntax-type))]';
+const entryTitleClass = 'mb-2xs text-title text-syntax-type';
 
 const ResumeSection = ({ title, children }) => (
   <section aria-labelledby={`resume-${title}`}>
@@ -67,10 +66,7 @@ const ResumeSection = ({ title, children }) => (
       className="mb-md font-code text-title text-action"
     >
       {title}
-      <span
-        aria-hidden="true"
-        className="text-[color:hsl(var(--workbench-syntax-keyword))]"
-      >
+      <span aria-hidden="true" className="text-syntax-keyword">
         .
       </span>
     </h2>
@@ -85,9 +81,7 @@ function Resume() {
         <div className="max-w-[48rem]">
           <h1 className="mb-lg font-code text-[2.5rem] leading-tight font-medium text-action">
             Résumé
-            <span className="text-[color:hsl(var(--workbench-syntax-keyword))]">
-              .
-            </span>
+            <span className="text-syntax-keyword">.</span>
           </h1>
           <div className="flex flex-col gap-xl text-body text-primary">
             <p className="max-w-[65ch]">

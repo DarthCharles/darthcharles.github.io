@@ -20,18 +20,12 @@ const syntaxClassName = 'block font-code text-lg';
 export const Info = () => (
   <main className="mx-auto max-w-6xl px-md py-2xl sm:px-lg md:py-3xl">
     <code aria-hidden="true" className={`${syntaxClassName} text-action`}>
-      <span className="text-[color:hsl(var(--workbench-syntax-keyword))]">
-        def
-      </span>{' '}
-      about
+      <span className="text-syntax-keyword">def</span> about
     </code>
 
     <div className="my-sm border-s border-primary py-lg ps-md sm:py-xl sm:ps-xl">
       <h1 className="text-display">
-        Carlos{' '}
-        <span className="text-[color:hsl(var(--workbench-syntax-type))]">
-          Contreras
-        </span>
+        Carlos <span className="text-syntax-type">Contreras</span>
       </h1>
       <p className="mt-sm text-title">Senior Software Engineer</p>
       <p className="mt-lg max-w-[65ch] text-body">
@@ -69,7 +63,7 @@ export const Info = () => (
 
     <code
       aria-hidden="true"
-      className={`${syntaxClassName} text-[color:hsl(var(--workbench-syntax-keyword))]`}
+      className={`${syntaxClassName} text-syntax-keyword`}
     >
       end
     </code>

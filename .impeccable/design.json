@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T19:24:32.039Z",
+  "title": "Design System: Carlos Contreras Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Gold action",
+        "tonalRamp": [
+          "oklch(15% 0.027 77.0)",
+          "oklch(25% 0.050 77.0)",
+          "oklch(35% 0.070 77.0)",
+          "oklch(45% 0.092 77.0)",
+          "oklch(56% 0.106 77.0)",
+          "oklch(68% 0.100 77.0)",
+          "oklch(82% 0.062 77.0)",
+          "oklch(95% 0.020 77.0)"
+        ]
+      },
+      "gold-hover": {
+        "role": "primary",
+        "displayName": "Pale gold",
+        "tonalRamp": [
+          "oklch(15% 0.016 78.7)",
+          "oklch(25% 0.029 78.7)",
+          "oklch(35% 0.041 78.7)",
+          "oklch(45% 0.054 78.7)",
+          "oklch(56% 0.062 78.7)",
+          "oklch(68% 0.059 78.7)",
+          "oklch(82% 0.037 78.7)",
+          "oklch(95% 0.012 78.7)"
+        ]
+      },
+      "apricot-keyword": {
+        "role": "secondary",
+        "displayName": "Apricot keyword",
+        "tonalRamp": [
+          "oklch(15% 0.021 60.1)",
+          "oklch(25% 0.039 60.1)",
+          "oklch(35% 0.054 60.1)",
+          "oklch(45% 0.072 60.1)",
+          "oklch(56% 0.082 60.1)",
+          "oklch(68% 0.078 60.1)",
+          "oklch(82% 0.048 60.1)",
+          "oklch(95% 0.016 60.1)"
+        ]
+      },
+      "lavender-type": {
+        "role": "tertiary",
+        "displayName": "Lavender type",
+        "tonalRamp": [
+          "oklch(15% 0.020 311.5)",
+          "oklch(25% 0.037 311.5)",
+          "oklch(35% 0.051 311.5)",
+          "oklch(45% 0.068 311.5)",
+          "oklch(56% 0.078 311.5)",
+          "oklch(68% 0.074 311.5)",
+          "oklch(82% 0.046 311.5)",
+          "oklch(95% 0.015 311.5)"
+        ]
+      },
+      "surface-primary": {
+        "role": "neutral",
+        "displayName": "Workbench navy",
+        "tonalRamp": [
+          "oklch(15% 0.007 255.8)",
+          "oklch(25% 0.014 255.8)",
+          "oklch(35% 0.019 255.8)",
+          "oklch(45% 0.025 255.8)",
+          "oklch(56% 0.029 255.8)",
+          "oklch(68% 0.027 255.8)",
+          "oklch(82% 0.017 255.8)",
+          "oklch(95% 0.005 255.8)"
+        ]
+      },
+      "surface-secondary": {
+        "role": "neutral",
+        "displayName": "Slate surface",
+        "tonalRamp": [
+          "oklch(15% 0.010 255.4)",
+          "oklch(25% 0.017 255.4)",
+          "oklch(35% 0.024 255.4)",
+          "oklch(45% 0.032 255.4)",
+          "oklch(56% 0.037 255.4)",
+          "oklch(68% 0.035 255.4)",
+          "oklch(82% 0.022 255.4)",
+          "oklch(95% 0.007 255.4)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Hover slate",
+        "tonalRamp": [
+          "oklch(15% 0.010 255.3)",
+          "oklch(25% 0.017 255.3)",
+          "oklch(35% 0.024 255.3)",
+          "oklch(45% 0.032 255.3)",
+          "oklch(56% 0.037 255.3)",
+          "oklch(68% 0.035 255.3)",
+          "oklch(82% 0.022 255.3)",
+          "oklch(95% 0.007 255.3)"
+        ]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Cool white",
+        "tonalRamp": [
+          "oklch(15% 0.002 256.7)",
+          "oklch(25% 0.003 256.7)",
+          "oklch(35% 0.005 256.7)",
+          "oklch(45% 0.006 256.7)",
+          "oklch(56% 0.007 256.7)",
+          "oklch(68% 0.007 256.7)",
+          "oklch(82% 0.004 256.7)",
+          "oklch(95% 0.001 256.7)"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Muted blue-gray",
+        "tonalRamp": [
+          "oklch(15% 0.007 256.8)",
+          "oklch(25% 0.012 256.8)",
+          "oklch(35% 0.017 256.8)",
+          "oklch(45% 0.023 256.8)",
+          "oklch(56% 0.026 256.8)",
+          "oklch(68% 0.025 256.8)",
+          "oklch(82% 0.015 256.8)",
+          "oklch(95% 0.005 256.8)"
+        ]
+      },
+      "border-primary": {
+        "role": "neutral",
+        "displayName": "Steel border",
+        "tonalRamp": [
+          "oklch(15% 0.008 255.2)",
+          "oklch(25% 0.015 255.2)",
+          "oklch(35% 0.021 255.2)",
+          "oklch(45% 0.028 255.2)",
+          "oklch(56% 0.032 255.2)",
+          "oklch(68% 0.030 255.2)",
+          "oklch(82% 0.019 255.2)",
+          "oklch(95% 0.006 255.2)"
+        ]
+      },
+      "on-primary": {
+        "role": "neutral",
+        "displayName": "Deep ink",
+        "tonalRamp": [
+          "oklch(15% 0.006 258.3)",
+          "oklch(25% 0.011 258.3)",
+          "oklch(35% 0.016 258.3)",
+          "oklch(45% 0.021 258.3)",
+          "oklch(56% 0.024 258.3)",
+          "oklch(68% 0.023 258.3)",
+          "oklch(82% 0.014 258.3)",
+          "oklch(95% 0.005 258.3)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Home display",
+        "purpose": "The name uses clamp(2.125rem, 5.6vw, 4.5rem)."
+      },
+      "headline": {
+        "displayName": "Route headline",
+        "purpose": "Dotted page titles on Projects, Blog, and Résumé."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Homepage role, résumé titles, and the 404 heading. Uses clamp(1.25rem, 3vw, 1.75rem)."
+      },
+      "code-marker": {
+        "displayName": "Code marker",
+        "purpose": "Function markers around the profile introduction."
+      },
+      "card-title": {
+        "displayName": "Card title",
+        "purpose": "Project and article names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Profile and résumé prose."
+      },
+      "card-body": {
+        "displayName": "Card body",
+        "purpose": "Project and article summaries."
+      },
+      "card-link": {
+        "displayName": "Card link",
+        "purpose": "Underlined collection actions."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button and navigation labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Role and date captions on the résumé."
+      },
+      "skill-label": {
+        "displayName": "Skill label",
+        "purpose": "Non-interactive skill badges."
+      }
+    },
+    "shadows": [
+      {
+        "name": "primary-action",
+        "value": "0 8px 24px hsl(216 33% 13% / 0.12)",
+        "purpose": "Ambient shadow on the filled Greda primary action."
+      }
+    ],
+    "motion": [
+      {
+        "name": "action-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Greda button state changes."
+      },
+      {
+        "name": "action-press-offset",
+        "value": "translateY(1px)",
+        "purpose": "Button press response suppressed for reduced motion."
+      },
+      {
+        "name": "navigation-cover-slide",
+        "value": "416.667ms cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+        "purpose": "Each slide of the full-page route cover. Reduced motion bypasses the wipe."
+      },
+      {
+        "name": "navigation-cover-minimum-hold",
+        "value": "166.667ms",
+        "purpose": "Minimum time fully covered before revealing a ready route."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Large Greda Button rendered as a filled link for a prominent destination.",
+      "html": "<a class=\"ds-button-primary\" href=\"/resume/\">View résumé <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg></a>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; box-sizing: border-box; border-radius: var(--radius, 0.5rem); font: 500 0.8125rem/1.5 var(--font-sans, Poppins, system-ui, sans-serif); text-decoration: none; white-space: nowrap; transition: all var(--duration, 150ms) cubic-bezier(0.4, 0, 0.2, 1); --ds-shadow: var(--shadow, 0 8px 24px hsl(216 33% 13% / 0.12)); height: 3rem; padding: 0 2rem; color: hsl(var(--primary-foreground, 216 33% 13%)); background: hsl(var(--primary, 36.575 100% 71.373%)); box-shadow: var(--ds-shadow); }\n.ds-button-primary:hover { background: hsl(var(--primary-hover, 36.585 100% 83.922%)); }\n.ds-button-primary svg { width: 1rem; height: 1rem; flex-shrink: 0; }\n.ds-button-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px hsl(var(--ring, 36.575 100% 71.373%)), var(--ds-shadow, 0 0 transparent); }\n.ds-button-primary:active { transform: translateY(1px); }\n@media (prefers-reduced-motion: reduce) { .ds-button-primary:active { transform: none; } }"
+    },
+    {
+      "name": "Ghost contact action",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Greda ghost Button rendered as a labeled contact link.",
+      "html": "<a class=\"ds-button-ghost\" href=\"mailto:ccontreras.eng@gmail.com\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"></rect><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"></path></svg> Email</a>",
+      "css": ".ds-button-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; box-sizing: border-box; border-radius: var(--radius, 0.5rem); font: 500 0.8125rem/1.5 var(--font-sans, Poppins, system-ui, sans-serif); text-decoration: none; white-space: nowrap; transition: all var(--duration, 150ms) cubic-bezier(0.4, 0, 0.2, 1); min-height: 44px; padding: 0.5rem; color: hsl(var(--text-primary, 215 45% 96%)); background: transparent; }\n.ds-button-ghost:hover { color: hsl(var(--accent-foreground, 215 45% 96%)); background: hsl(var(--accent, 214 25% 31%)); }\n@media (min-width: 40rem) { .ds-button-ghost { padding-inline: 0.75rem; } }\n.ds-button-ghost svg { width: 1rem; height: 1rem; flex-shrink: 0; }\n.ds-button-ghost:focus-visible { outline: none; box-shadow: 0 0 0 2px hsl(var(--ring, 36.575 100% 71.373%)), var(--ds-shadow, 0 0 transparent); }\n.ds-button-ghost:active { transform: translateY(1px); }\n@media (prefers-reduced-motion: reduce) { .ds-button-ghost:active { transform: none; } }"
+    },
+    {
+      "name": "App bar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Wrapping site navigation with a visible current-page state.",
+      "html": "<header class=\"ds-app-bar\"><nav class=\"ds-nav\" aria-label=\"Site navigation\"><ul class=\"ds-nav-list\"><li><a class=\"ds-nav-link\" href=\"/\" aria-current=\"page\">Home</a></li><li><a class=\"ds-nav-link\" href=\"/resume/\">Résumé</a></li><li><a class=\"ds-nav-link\" href=\"/projects/\">Projects</a></li><li><a class=\"ds-nav-link\" href=\"/blog/\">Blog</a></li></ul></nav></header>",
+      "css": ".ds-app-bar { background: hsl(var(--surface-secondary, 214 28% 27%)); border-bottom: 1px solid hsl(var(--border-primary, 214 22% 65%)); }\n.ds-nav { max-width: 72rem; box-sizing: border-box; margin-inline: auto; padding-inline: 1rem; }\n.ds-nav-list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.125rem; list-style: none; margin: 0; padding: 0.5rem 0; }\n.ds-nav-link { display: inline-flex; min-height: 44px; align-items: center; padding-inline: 0.5rem; border-radius: var(--radius, 0.5rem); color: hsl(var(--text-secondary, 215 29% 78%)); font: 500 0.8125rem/1.5 var(--font-sans, Poppins, system-ui, sans-serif); text-decoration: none; white-space: nowrap; }\n.ds-nav-link:hover, .ds-nav-link[aria-current=\"page\"] { background: hsl(var(--surface-primary, 214.286 31.111% 17.647%)); color: hsl(var(--text-action, 36.575 100% 71.373%)); }\n.ds-nav-link:focus-visible { outline: 2px solid hsl(var(--ring, 36.575 100% 71.373%)); outline-offset: 2px; }\n@media (min-width: 40rem) { .ds-nav { padding-inline: 1.5rem; } .ds-nav-list { gap: 0.5rem; } .ds-nav-link { padding-inline: 0.75rem; } }"
+    },
+    {
+      "name": "Collection card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Greda Card and CardContent with a full-width preview, summary, and destination-specific action.",
+      "html": "<article class=\"ds-card\"><img class=\"ds-card-media\" src=\"data:image/webp;base64,UklGRiQDAABXRUJQVlA4IBgDAAAQHACdASoYAZMAPsFgqlAnpiQipLToGPAYCWdu4XVL8Cilsrh2Libe7npdOA3f9+imO1mGasqB78B3IUQohRCiFEKIUQohRCiFEKIUQmUVcYdWIJ8BhlubJuTcm4CrwtgLROEIwjS1GsolyIciEFDgh65jVWYOOkoOG5sm5Hn9XarTOJMRrDwbi+TOPm7fTMhq+PQM/J+T8mJLbxHFYJTSp9EFx2ESEhGBczMnA66DAyip5sm5NyPgX4SGN/XLjhDXI8NV/TewZv8KIUQohSJ4QUJWIbQohRCiFEKIUQohRCiFEKIUQohMgAD+/hrv8OkY3ZD+22a198wAAA4yCCuP96L+bcONmrYEI+/H7Vvt0Or8WpzjpRL4UTTXfRTvEmiQ7yH9NySK/k56gwUng3+aoVmdfN18wQClxBbWa2dUR5ohfd6uW0kWMwKhNyHocVs/kBIGBzv9RbrTF921Qsi95uDhYPoCTmb5VU6Mw94s2S9G/NWz7hnA0ISQEi79BbOfDjV9WIbs+MLkJvJWDWkaHelnZPkx0xfjaGfyA0nJW8HgGDHO9I3UDkclvZWUdaUyPdBceDxXG2fyh2N1ohh1iSW7xGR+sWjCaAAlsUPPent/kJuKccTKuSdK0o+ferhVJNlsgqgLKbf6I//lbHewMjFT3d7YeCB/xvavQSq5gJJ95vhYQ5wDz1J0LSsAOrzU/veFFnPT2vTbgf5YerkJz/6H/LlgG7Jz3WOPUjaign27CkYezbE5FC197zv54Wo/bkh7ViT1uydiKY+c7/OQESYu7A2kUhey0rwDz0zLrxsnDfEoVVl5jJ2EJjETJG+GFcdtbrusiZ24RJqGGeOfMwZFqB8HVo9+PixlbHPzIEEkAj9C1iSD5F3j5aoxUaLwRjGas3p8jjWi97TPOdwIYKC4w0/mWj78wpRBmvzZJxo/uwRsQkwoc+vSfo7E+s0kA2YP/0QARsh6EkIRO2re/0lJRExjDfthj0c8VPg3lbJDPG/2HdOUZ4+hCxsRoCJ93aBypv3+O/1wvVMvadwZzl2IAAAAAAA=\" alt=\"\" width=\"1200\" height=\"630\"><div class=\"ds-card-content\"><h2 class=\"ds-card-title\">Comal</h2><p class=\"ds-card-description\">Build a meal library and turn it into weekly menus and shopping lists. A React PWA backed by a Rails API.</p><div class=\"ds-card-actions\"><a class=\"ds-card-link\" href=\"https://github.com/DarthCharles/meal_planner\" aria-label=\"View source for Comal\">View source</a></div></div></article>",
+      "css": ".ds-card { display: flex; flex-direction: column; overflow: hidden; border-radius: var(--radius-lg, 0.75rem); background: hsl(var(--surface-raised, 214 28% 27%)); color: hsl(var(--text-primary, 215 45% 96%)); }\n.ds-card-media { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; }\n.ds-card-content { display: flex; flex: 1; flex-direction: column; padding: 1.25rem; }\n.ds-card-title { margin: 0 0 0.5rem; font: 500 1.375rem/1.2 var(--font-sans, Poppins, system-ui, sans-serif); }\n.ds-card-description { margin: 0 0 1rem; color: hsl(var(--text-secondary, 215 29% 78%)); font: 400 1rem/1.6 var(--font-sans, Poppins, system-ui, sans-serif); }\n.ds-card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: auto; }\n.ds-card-link { display: inline-flex; min-height: 2rem; align-items: center; color: hsl(var(--text-action, 36.575 100% 71.373%)); font: 400 0.875rem/1.5 var(--font-sans, Poppins, system-ui, sans-serif); text-decoration: underline; text-underline-offset: 0.2em; }\n.ds-card-link:hover { color: hsl(var(--primary-hover, 36.585 100% 83.922%)); }\n.ds-card-link:focus-visible { outline: 2px solid; outline-offset: var(--focus-offset, 3px); }"
+    },
+    {
+      "name": "Card action link",
+      "kind": "custom",
+      "refersTo": "card-link",
+      "description": "Underlined gold link for opening a project, source repository, or article.",
+      "html": "<a class=\"ds-card-link\" href=\"https://github.com/DarthCharles/meal_planner\" aria-label=\"View source for Comal\">View source</a>",
+      "css": ".ds-card-link { display: inline-flex; min-height: 2rem; align-items: center; color: hsl(var(--text-action, 36.575 100% 71.373%)); font: 400 0.875rem/1.5 var(--font-sans, Poppins, system-ui, sans-serif); text-decoration: underline; text-underline-offset: 0.2em; }\n.ds-card-link:hover { color: hsl(var(--primary-hover, 36.585 100% 83.922%)); }\n.ds-card-link:focus-visible { outline: 2px solid; outline-offset: var(--focus-offset, 3px); }"
+    },
+    {
+      "name": "Skill badge",
+      "kind": "chip",
+      "refersTo": "skill-badge",
+      "description": "Greda secondary Badge with Workbench surface and text roles.",
+      "html": "<span class=\"ds-skill-badge\">React</span>",
+      "css": ".ds-skill-badge { display: inline-flex; align-items: center; padding: 0.125rem 0.5rem; border-radius: var(--radius, 0.5rem); background: hsl(var(--surface-secondary, 214 28% 27%)); color: hsl(var(--text-primary, 215 45% 96%)); font: 600 0.75rem/1.5 var(--font-sans, Poppins, system-ui, sans-serif); }"
+    },
+    {
+      "name": "Dotted route heading",
+      "kind": "custom",
+      "description": "Monospace route title with syntax-colored punctuation.",
+      "html": "<h1 class=\"ds-route-heading\">projects<span class=\"ds-route-period\">.</span></h1>",
+      "css": ".ds-route-heading { margin: 0 0 1.5rem; color: hsl(var(--text-action, 36.575 100% 71.373%)); font: 500 2.5rem/1.25 var(--workbench-font-code, \"Source Code Pro\", ui-monospace, Menlo, Consolas, monospace); }\n.ds-route-period { color: hsl(var(--workbench-syntax-keyword, 27 78% 72%)); }"
+    },
+    {
+      "name": "About function framing",
+      "kind": "custom",
+      "description": "Function markers and an indent guide around the home introduction.",
+      "html": "<div class=\"ds-about\"><code class=\"ds-about-marker\" aria-hidden=\"true\"><span class=\"ds-about-keyword\">def</span> about</code><div class=\"ds-about-content\"><h1 class=\"ds-about-name\">Carlos <span class=\"ds-about-type\">Contreras</span></h1><p class=\"ds-about-role\">Senior Software Engineer</p></div><code class=\"ds-about-marker ds-about-keyword\" aria-hidden=\"true\">end</code></div>",
+      "css": ".ds-about { color: hsl(var(--text-primary, 215 45% 96%)); }\n.ds-about-marker { display: block; color: hsl(var(--text-action, 36.575 100% 71.373%)); font: 400 1.25rem/1.5 var(--workbench-font-code, \"Source Code Pro\", ui-monospace, Menlo, Consolas, monospace); }\n.ds-about-keyword { color: hsl(var(--workbench-syntax-keyword, 27 78% 72%)); }\n.ds-about-content { margin-block: 0.75rem; border-inline-start: 1px solid hsl(var(--border-primary, 214 22% 65%)); padding-block: 1.5rem; padding-inline-start: 1rem; }\n.ds-about-name { margin: 0; font: 500 clamp(2.125rem, 5.6vw, 4.5rem)/1.1 var(--font-sans, Poppins, system-ui, sans-serif); letter-spacing: -0.04em; }\n.ds-about-type { color: hsl(var(--workbench-syntax-type, 276 66% 82%)); }\n.ds-about-role { margin: 0.75rem 0 0; font: 500 clamp(1.25rem, 3vw, 1.75rem)/1.2 var(--font-sans, Poppins, system-ui, sans-serif); }\n@media (min-width: 40rem) { .ds-about-content { padding-block: 2rem; padding-inline-start: 2rem; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Inside an IDE",
+    "overview": "The portfolio makes Carlos’s role, résumé, and work easy to find. The dark Workbench theme brings the experience of an IDE to that structure through syntax color, a function-shaped introduction, and dotted route titles that evoke an API.\n\nQuiet reading surfaces and low-profile controls keep the site clear and approachable. Left-aligned Poppins gives the prose room to breathe, while Source Code Pro marks the places where the IDE reference is most visible.",
+    "keyCharacteristics": [
+      "Dark navy canvas with slate navigation, cards, and skill labels.",
+      "Gold for actions and code-style headings, apricot for syntax punctuation and keywords, and lavender for type-like names.",
+      "A fluid name display, readable prose columns, and labeled controls."
+    ],
+    "rules": [],
+    "dos": [
+      "Do use the existing Workbench surface and text roles for new sections.",
+      "Do compose Greda’s shared components and use its named typography, spacing, and radius tokens where they fit the layout.",
+      "Do keep the résumé, work samples, and contact destinations easy to scan by their visible labels.",
+      "Do keep content left-aligned and let navigation, action rows, and badges wrap at narrower widths."
+    ],
+    "donts": [
+      "Don't extend monospace into biographies, project descriptions, or résumé bullets.",
+      "Don't add decorative shadows to the app bar, collection cards, or skill badges."
+    ]
+  }
+}

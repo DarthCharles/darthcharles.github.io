@@ -9,6 +9,14 @@
   font-family: var(--workbench-font-code);
 }
 
+@utility text-syntax-keyword {
+  color: hsl(var(--workbench-syntax-keyword));
+}
+
+@utility text-syntax-type {
+  color: hsl(var(--workbench-syntax-type));
+}
+
 html,
 body {
   background-color: hsl(var(--surface-primary));
@@ -17,5 +25,5 @@ body {
 }
 
 body {
-  font-size: 20px;
+  font-size: var(--font-size-lg);
 }

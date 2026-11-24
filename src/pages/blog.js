@@ -13,9 +13,7 @@ const Blog = ({ data }) => {
       <main className="mx-auto max-w-[71.25rem] px-md py-2xl">
         <h1 className="mb-lg font-code text-[2.5rem] leading-tight font-medium text-action">
           blog
-          <span className="text-[color:hsl(var(--workbench-syntax-keyword))]">
-            .
-          </span>
+          <span className="text-syntax-keyword">.</span>
         </h1>
         <CardGrid>
           {blogList.map(({ node }) => (

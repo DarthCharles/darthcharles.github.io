@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Card as GredaCard, CardContent } from '@darthcharles/greda';
+
 import karma from '../images/karma.png';
 import comal from '../images/project-comal.webp';
 import greda from '../images/project-greda.webp';
@@ -17,7 +19,7 @@ const cardImages = new Map([
 ]);
 
 const linkClassName =
-  'inline-flex min-h-xl items-center text-[0.875rem] text-action underline underline-offset-[0.2em] hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-[3px]';
+  'inline-flex min-h-xl items-center text-base text-action underline underline-offset-[0.2em] hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-(--focus-offset)';
 
 export const CardGrid = ({ children }) => (
   <ul
@@ -42,42 +44,44 @@ export const Card = ({
     throw new Error(`Missing card image "${image}" for "${title}"`);
 
   return (
-    <li className="flex flex-col overflow-hidden rounded-lg surface-raised">
-      <img
-        className="block aspect-[1200/630] h-auto w-full object-cover"
-        src={imageSrc}
-        alt=""
-        width="1200"
-        height="630"
-      />
-      <div className="flex flex-1 flex-col p-[1.25rem]">
-        <h2 className="mb-xs text-[1.375rem] leading-[1.2] font-medium">
-          {title}
-        </h2>
-        <p className="mb-md text-[1rem] leading-[1.6] text-secondary">
-          {subtitle}
-        </p>
-        <div className="mt-auto flex flex-wrap gap-x-[1.25rem] gap-y-xs">
-          <a
-            className={linkClassName}
-            href={link}
-            aria-label={`${linkLabel} for ${title}`}
-            target={openInNewTab ? '_blank' : undefined}
-            rel={openInNewTab ? 'noopener noreferrer' : undefined}
-          >
-            {linkLabel}
-          </a>
-          {source && (
+    <li className="flex flex-col">
+      <GredaCard className="flex flex-1 flex-col overflow-hidden border-0 shadow-none">
+        <img
+          className="block aspect-[1200/630] h-auto w-full object-cover"
+          src={imageSrc}
+          alt=""
+          width="1200"
+          height="630"
+        />
+        <CardContent className="flex flex-1 flex-col p-[1.25rem]">
+          <h2 className="mb-xs text-[1.375rem] leading-[1.2] font-medium">
+            {title}
+          </h2>
+          <p className="mb-md text-body leading-[1.6] text-secondary">
+            {subtitle}
+          </p>
+          <div className="mt-auto flex flex-wrap gap-x-[1.25rem] gap-y-xs">
             <a
               className={linkClassName}
-              href={source}
-              aria-label={`View source for ${title}`}
+              href={link}
+              aria-label={`${linkLabel} for ${title}`}
+              target={openInNewTab ? '_blank' : undefined}
+              rel={openInNewTab ? 'noopener noreferrer' : undefined}
             >
-              View source
+              {linkLabel}
             </a>
-          )}
-        </div>
-      </div>
+            {source && (
+              <a
+                className={linkClassName}
+                href={source}
+                aria-label={`View source for ${title}`}
+              >
+                View source
+              </a>
+            )}
+          </div>
+        </CardContent>
+      </GredaCard>
     </li>
   );
 };

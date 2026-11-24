@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "poppins|source code pro",
+        "createdAt": "2026-11-24T19:24:20.968Z",
+        "reason": "Workbench specifies both fonts and DESIGN.md declares both stacks. The detector reads the Google Fonts request as one font family."
+      }
+    ]
+  }
+}
